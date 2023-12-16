@@ -41,7 +41,7 @@
 
             <ul class="flex gap-6">
                 <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
-                 transition-all duration-200 relative group">
+                 transition-all duration-200 relative group hidden lg:block">
 
                     <a href="#">Payments</a>
                     <div class="absolute bottom-0 w-full h-1 bg-lightBlue
@@ -50,7 +50,7 @@
                 </li>
 
                 <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
-                 transition-all duration-200 relative group">
+                 transition-all duration-200 relative group hidden lg:block">
 
                     <a href="#">Banking</a>
                     <div class="absolute bottom-0 w-full h-1 bg-lightBlue
@@ -59,21 +59,21 @@
                 </li>
 
                 <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
-                 transition-all duration-200 relative group">
+                 transition-all duration-200 relative group hidden lg:block">
 
                     <a href="#">Corporate Card</a>
                    
                 </li>
 
                 <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
-                 transition-all duration-200 relative group">
+                 transition-all duration-200 relative group hidden lg:block">
 
                     <a href="#">Payroll</a>
 
                 </li>
 
                 <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
-                 transition-all duration-200 relative group">
+                 transition-all duration-200 relative group hidden lg:block">
 
                     <a href="#">Resources</a>
                     <div class="absolute bottom-0 w-full h-1 bg-lightBlue
@@ -82,7 +82,7 @@
                 </li>
 
                 <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
-                 transition-all duration-200 relative group">
+                 transition-all duration-200 relative group hidden lg:block">
 
                     <a href="#">Support</a>
                     <div class="absolute bottom-0 w-full h-1 bg-lightBlue
@@ -91,7 +91,7 @@
                 </li>
 
                 <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
-                 transition-all duration-200 relative group">
+                 transition-all duration-200 relative group hidden lg:block">
 
                     <a href="#">Pricing</a>
                     <div class="absolute bottom-0 w-full h-1 bg-lightBlue
@@ -100,23 +100,27 @@
             </ul>
 
             <div class="flex gap-6">
-                <img src="./images/india-flag.svg" alt="load" width="28px" height="20px">
+                <img src="./images/india-flag.svg" alt="load" 
+                width="28px" 
+                height="20px"
+                class="hidden lg:block">
 
                 <button class="py-3 px-5 font-mullish text-white border-lightBlue border
                  rounded-sm text-sm font-bold">Log in</button>
 
                  <button class="py-3 px-4 font-mullish rounded-sm text-sm font-bold
                   bg-white text-lightBlue border transition-all duration-200
-                   hover:text-lightBlue500">Sign Up</button>
+                   hover:text-lightBlue500 hidden lg:flex">Sign Up</button>
 
             </div>
 
         </div>
-    </nav>
+    </nav> 
 
+        <!-- Hero Section -->
     <section class="relative bg-deepBlue">
 
-        <div class="w-10/12 max-w-[1080px] flex flex-row justify-between items-center mx-auto">
+        <div class="w-10/12 max-w-[1080px] flex flex-col lg:flex-row justify-between items-center mx-auto">
             <!-- left part -->
             <div class="space-y-8">
                 <h1 class="font-mullish font-bold text-[40px] leading-[1.2] text-white">Power your finance, grow your business</h1>
@@ -150,8 +154,13 @@
 
         <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4 ">
 
-            <h2 class="font-mullish text-center text-2xl leading-[1.2] font-extrabold">
+            <h2 class="font-mullish text-center text-2xl leading-[1.2] font-extrabold
+            hidden md:block">
                 Accept Payments with Razorpay Payment Suite</h2>
+
+                <h2 class="font-mullish text-center text-4xl leading-[1.2] font-extrabold
+             md:hidden">
+                Explore RazorPay Payment Suite</h2>
 
             <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
 
@@ -190,13 +199,13 @@
                     </ul>
 
                     <!-- button and hyperlink -->
-                    <div class="flex flex-row items-center space-x-4 ">
-                        <button class="bg-lightBlue w-fit text-white py-[14px]
+                    <div class="flex flex-col-reverse md:flex-row items-center space-x-4 ">
+                        <button class="bg-lightBlue w-full md:w-fit text-white py-[14px]
                         px-[18px] rounded-md font-mullish font-bold hover:bg-
-                        transition-all duration-200">
+                        transition-all duration-200 ">
                         Sign Up Now</button>
                         <!-- hyperlink -->
-                        <div class="flex items-center cursor-pointer group ">
+                        <div class="flex self-start md:items-center cursor-pointer group ">
                             <a href="#" 
                             class="font-mullish font-bold text-lightBlue500 
                             group-hover:text-grayBlue transition-all duration-200">
@@ -209,7 +218,7 @@
 
                 </div>
                 <img src="./images/payment-suite.png" alt=""
-                class="absolute max-w-[600px] right-0 bottom-0">
+                class="absolute max-w-[600px] right-0 bottom-0 hidden md:max-w-[400px] lg:max-w-[600px] md:block lg:block">
             </div>
 
             <div class="w-full grid grid-cols-3 gap-4 mt-10">
